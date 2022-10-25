@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="{{ url_for('static',filename='favicon.ico') }}" type="image/x-icon" />
+        <title>Password Manager</title>
+       
+    </head>
+    <body>
+        <h1>Password Manager</h1>
+        
+        <form action="/add_passw" method="POST" accept-charset="utf-8" autocomplete="off">
+            
+            <label for="key">key</label>
+            <br />
+            <input type="text" name="key" id="key" value="" required=True/>
+            <br>
+            <br />
+            <label for="passw"> Password </label>
+            <br>
+            
+            <input type="text" name="passw" id="passw" value="" required=True/>
+            <br />
+            <br />
+            <input type="submit" name="action" id="submit" value="Add New" />
+            <input type="submit" name="action" id="submit" value="Edit" />
+            
+            
+        </form>
+    
+        <br>
+        <a href="/p" class="dump">VIEW PASSWORDS</a>
+        
+        
+        
+    </body>
+</html>

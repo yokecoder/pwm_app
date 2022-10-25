@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title> Update Password </title>
+     
+    </head>
+    <body>
+        <form action="/update/{{key}}" method="POST" accept-charset="utf-8">
+           <input type="hidden" name="key" value="{{key}}">
+           <br>
+          
+           <label for="New Password">New Password For  '{{key}}'  </label>
+           <br>
+           <br />
+           <input type="text" name="passw" id="passw"  />
+           <br />
+           <br />
+           <input type="submit" name="submit" id="submit" value="Update Password" />
+        </form>
+    </body>
+</html>
